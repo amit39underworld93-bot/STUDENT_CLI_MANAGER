@@ -66,8 +66,7 @@ Before running the application, ensure you have PostgreSQL installed and running
 
 1. Clone the repository:
 
-git clone https://github.com/amit39underworld93-bot/STUDENT_CLI_MANAGER.git
-cd STUDENT_CLI_MANAGER
+git clone https://github.com/amit39underworld93-bot/STUDENT_CLI_MANAGER.git cd STUDENT_CLI_MANAGER
 
 2. Install dependencies:
 
