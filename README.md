@@ -34,7 +34,7 @@ Before running the application, ensure you have PostgreSQL installed and running
 
    Run the following SQL queries in your PostgreSQL terminal (psql) or pgAdmin:
    
-   -- Create Students Table
+   -- Create Students Table:
    
    CREATE TABLE students (
        id SERIAL PRIMARY KEY,
@@ -44,14 +44,14 @@ Before running the application, ensure you have PostgreSQL installed and running
        course VARCHAR(100)
    );
    
-   -- Create Subjects Table
+   -- Create Subjects Table:
    
    CREATE TABLE subjects (
        id SERIAL PRIMARY KEY,
        name VARCHAR(100) NOT NULL UNIQUE
    );
    
-   -- Create Marks Table
+   -- Create Marks Table:
    
    CREATE TABLE marks (
        student_id INT REFERENCES students(id) ON DELETE CASCADE,
@@ -59,3 +59,45 @@ Before running the application, ensure you have PostgreSQL installed and running
        marks INT CHECK (marks >= 0 AND marks <= 100),
        PRIMARY KEY (student_id, subject_id)
    );
+
+***Note: Update the database credentials (user, password) in the database.py file to match your local PostgreSQL configuration.***
+
+# 💻 How to Run (Installation & Execution)
+
+1. Clone the repository:
+
+git clone https://github.com/amit39underworld93-bot/STUDENT_CLI_MANAGER.git
+cd STUDENT_CLI_MANAGER
+
+2. Install dependencies:
+
+   Install the required PostgreSQL adapter for Python using the provided requirements file.
+
+   pip install -r requirements.txt
+
+3. Execute the application:
+
+   python3 main.py
+
+# 📸 Usage Overview
+
+Upon launching the application, you will be greeted with the following interactive menu:
+
+========================================
+         STUDENT CLASS MANAGER
+========================================
+1. Add student
+2. View all students
+3. Search student
+4. Update student
+5. Delete student
+6. Add marks
+7. View student's marks
+8. Calculate result
+9. Update marks
+10. View all subjects
+11. Add subject
+12. Update subject
+13. Exit
+
+Enter your choice between 1 to 13:
