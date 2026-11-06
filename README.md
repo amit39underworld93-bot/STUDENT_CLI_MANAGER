@@ -27,9 +27,10 @@ This application provides a comprehensive Command-Line Interface (CLI) to seamle
 Before running the application, ensure you have PostgreSQL installed and running.
 
 1. Create a database named student_manager:
+
    CREATE DATABASE student_manager;
 
-2. 2. Create the required tables:
+2. Create the required tables:
    Run the following SQL queries in your PostgreSQL terminal (psql) or pgAdmin:
    
    -- Create Students Table
