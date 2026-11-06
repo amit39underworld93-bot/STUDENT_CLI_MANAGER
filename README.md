@@ -31,9 +31,11 @@ Before running the application, ensure you have PostgreSQL installed and running
    CREATE DATABASE student_manager;
 
 2. Create the required tables:
+
    Run the following SQL queries in your PostgreSQL terminal (psql) or pgAdmin:
    
    -- Create Students Table
+   
    CREATE TABLE students (
        id SERIAL PRIMARY KEY,
        name VARCHAR(100) NOT NULL,
@@ -43,12 +45,14 @@ Before running the application, ensure you have PostgreSQL installed and running
    );
    
    -- Create Subjects Table
+   
    CREATE TABLE subjects (
        id SERIAL PRIMARY KEY,
        name VARCHAR(100) NOT NULL UNIQUE
    );
    
    -- Create Marks Table
+   
    CREATE TABLE marks (
        student_id INT REFERENCES students(id) ON DELETE CASCADE,
        subject_id INT REFERENCES subjects(id) ON DELETE CASCADE,
