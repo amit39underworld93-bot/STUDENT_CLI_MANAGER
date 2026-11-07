@@ -60,7 +60,7 @@ Before running the application, ensure you have PostgreSQL installed and running
        PRIMARY KEY (student_id, subject_id)
    );
 
-***Note: Update the database credentials (user, password) in the database.py file to match your local PostgreSQL configuration.***
+**Note:** *Update the database credentials (user, password) in the database.py file to match your local PostgreSQL configuration.*
 
 # 💻 How to Run (Installation & Execution)
 
