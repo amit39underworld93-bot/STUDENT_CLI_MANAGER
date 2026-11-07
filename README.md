@@ -3,7 +3,7 @@
 A robust, terminal-based Student Management System built with Python and PostgreSQL.
 This application provides a comprehensive Command-Line Interface (CLI) to seamlessly manage student records, subjects, academic marks, and automated result calculations.
 
-# 🚀 Features
+## 🚀 Features
 
 - **Full CRUD Operations:** Create, Read, Update, and Delete student profiles and subject details directly from the terminal.
 
@@ -15,14 +15,14 @@ This application provides a comprehensive Command-Line Interface (CLI) to seamle
 
 - **Robust Error Handling:** Validates user inputs (e.g., catching ValueError for age/marks) to prevent application crashes during execution.
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 - **Language:** Python 3
 
 - **Database:** PostgreSQL
 
 - **Driver/Connector:** psycopg (psycopg3)
 
-# 🗄️ Database Setup 
+## 🗄️ Database Setup 
 
 Before running the application, ensure you have PostgreSQL installed and running.
 
@@ -62,7 +62,7 @@ Before running the application, ensure you have PostgreSQL installed and running
 
 **Note:** *Update the database credentials (user, password) in the database.py file to match your local PostgreSQL configuration.*
 
-# 💻 How to Run (Installation & Execution)
+## 💻 How to Run (Installation & Execution)
 
 **1. Clone the repository:**
 
@@ -78,7 +78,7 @@ git clone https://github.com/amit39underworld93-bot/STUDENT_CLI_MANAGER.git cd S
 
    *python3 main.py*
 
-# 📸 Usage Overview
+## 📸 Usage Overview
 
 Upon launching the application, you will be greeted with the following interactive menu:
 
