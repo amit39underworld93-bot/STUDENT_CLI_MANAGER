@@ -26,57 +26,57 @@ This application provides a comprehensive Command-Line Interface (CLI) to seamle
 
 Before running the application, ensure you have PostgreSQL installed and running.
 
-1. Create a database named student_manager:
+**1. Create a database named student_manager:**
 
    CREATE DATABASE student_manager;
 
-2. Create the required tables:
+**2. Create the required tables:**
 
-   Run the following SQL queries in your PostgreSQL terminal (psql) or pgAdmin:
+   *Run the following SQL queries in your PostgreSQL terminal (psql) or pgAdmin:*
    
-   -- Create Students Table:
+   *-- Create Students Table:*
    
-   CREATE TABLE students (
+   **CREATE TABLE students (
        id SERIAL PRIMARY KEY,
        name VARCHAR(100) NOT NULL,
        age INT NOT NULL,
        email VARCHAR(100) UNIQUE,
        course VARCHAR(100)
-   );
+   );**
    
-   -- Create Subjects Table:
+   *-- Create Subjects Table:*
    
-   CREATE TABLE subjects (
+   **CREATE TABLE subjects (
        id SERIAL PRIMARY KEY,
        name VARCHAR(100) NOT NULL UNIQUE
-   );
+   );**
    
-   -- Create Marks Table:
+   *-- Create Marks Table:*
    
-   CREATE TABLE marks (
+   **CREATE TABLE marks (
        student_id INT REFERENCES students(id) ON DELETE CASCADE,
        subject_id INT REFERENCES subjects(id) ON DELETE CASCADE,
        marks INT CHECK (marks >= 0 AND marks <= 100),
        PRIMARY KEY (student_id, subject_id)
-   );
+   );**
 
 **Note:** *Update the database credentials (user, password) in the database.py file to match your local PostgreSQL configuration.*
 
 # 💻 How to Run (Installation & Execution)
 
-1. Clone the repository:
+**1. Clone the repository:**
 
 git clone https://github.com/amit39underworld93-bot/STUDENT_CLI_MANAGER.git cd STUDENT_CLI_MANAGER
 
-2. Install dependencies:
+**2. Install dependencies:**
 
    Install the required PostgreSQL adapter for Python using the provided requirements file.
 
-   pip install -r requirements.txt
+   *pip install -r requirements.txt*
 
-3. Execute the application:
+**3. Execute the application:**
 
-   python3 main.py
+   *python3 main.py*
 
 # 📸 Usage Overview
 
