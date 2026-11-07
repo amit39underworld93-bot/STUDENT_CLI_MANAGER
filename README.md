@@ -103,4 +103,4 @@ Upon launching the application, you will be greeted with the following interacti
 
 Enter your choice between 1 to 13:
 
-Simply enter the number corresponding to your desired operation and provide the inputs when prompted.
+***Simply enter the number corresponding to your desired operation and provide the inputs when prompted.***
