@@ -83,7 +83,9 @@ git clone https://github.com/amit39underworld93-bot/STUDENT_CLI_MANAGER.git cd S
 Upon launching the application, you will be greeted with the following interactive menu:
 
 ========================================
+
          STUDENT CLASS MANAGER
+
 ========================================
 1. Add student
 2. View all students
